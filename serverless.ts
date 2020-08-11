@@ -28,8 +28,8 @@ const serverlessConfiguration: Serverless = {
     },
   },
   functions: {
-    get: {
-      handler: "src/handlers/get.handler",
+    getTodos: {
+      handler: "src/handlers/todos/get.handler",
       events: [
         {
           http: {
@@ -39,8 +39,8 @@ const serverlessConfiguration: Serverless = {
         },
       ],
     },
-    create: {
-      handler: "src/handlers/create.handler",
+    createTodo: {
+      handler: "src/handlers/todos/create.handler",
       events: [
         {
           http: {
